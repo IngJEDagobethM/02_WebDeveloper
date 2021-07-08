@@ -6,6 +6,27 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Platzi-Video</title>
     </head>
+    <style>
+        p{
+            color: red; /*Todos los elementos P*/
+        }
+        p:first-child{ /*Primer elemento P*/
+            color:pink;
+        }
+        p:last-child{ /*último elemto P*/
+            color:purple;
+        }
+        p:nth-child(2n){ /*Elemento P par*/
+            color: royalblue;
+        }
+        p:nth-child(2n+1){ /*Elemento P impar*/
+            color: saddlebrown;
+        }
+        ul::first-letter{
+            color: slateblue;
+            font-size: 24px;
+        }
+    </style>
     <body>
         <header>
             <h1>Platzi-Video</h1>
@@ -18,6 +39,9 @@
         </header>
         <main>
             <p>Sección principal.</p>
+            <p>Probando pseudo-clases.</p>
+            <p>Probando pseudo-elementos.</p>
+            <p>Ejecución final.</p>
         </main>
         <footer>
             <nav>
