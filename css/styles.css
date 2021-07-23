@@ -2,9 +2,9 @@ body {
     margin: 0px;
     font-family: 'Mulish', sans-serif;
     /* background-color: #ab88ff; */
-    background: #00C9FF;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #92FE9D, #00C9FF);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #92FE9D, #00C9FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #00C9FF;  /*fallback for old browsers*/
+    background: -webkit-linear-gradient(to right, #92FE9D, #00C9FF);  /*Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #92FE9D, #00C9FF); /*W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .header {
@@ -66,4 +66,36 @@ body {
 .header__menu--profile p {
     margin-right: 0px;
     color: white;
+}
+
+.main {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+}
+
+.main__title {
+    color: #4b6652;
+    font-size: 25px;
+}
+
+.input {
+    /* background-color: #c6ffcf; */
+    /* background-color: #6bfcff; */
+    background: #6bfcff;  /*fallback for old browsers*/
+    background: -webkit-linear-gradient(to right, #c6ffcf, #6bfcff);  /*Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #c6ffcf, #6bfcff); /*W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border: 2px solid white;
+    border-radius: 50px;
+    color: #597661;
+    font-size: 16px;
+    height: 50px;
+    outline-style: none;
+    padding: 0px 20px;
+    width: 70%;
+}
+
+::placeholder {
+    color: black;
 }
