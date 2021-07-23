@@ -72,7 +72,7 @@ body {
     align-items: center;
     display: flex;
     flex-direction: column;
-    height: 300px;
+    height: 200px;
 }
 
 .main__title {
@@ -98,4 +98,45 @@ body {
 
 ::placeholder {
     color: black;
+}
+
+.carousel {
+    width: 100%;
+    overflow: scroll;
+    padding: 30px;
+    position: relative;
+    scrollbar-width: none;
+}
+
+.carousel__container {
+    white-space: nowrap;
+    margin: 70px 0px;
+    padding-bottom: 10px;
+}
+
+.carousel__item {
+    background-color: whitesmoke;
+    border-radius: 20px;
+    cursor: pointer;
+    display: inline-block;
+    height: 250px;
+    margin-right: 10px;
+    opacity: 0.8;
+    overflow: hidden;
+    transform-origin: center left;
+    transition: 450ms;
+    width: 200px;
+}
+
+.carousel__item:hover ~ .carousel__item {
+    transform: translate3d(100px, 0, 0);
+}
+
+.carousel__container:hover .carousel__item {
+    opacity: 0.3;
+}
+
+.carousel__container:hover .carousel__item:hover {
+    transform: scale(1.5);
+    opacity: 0.8;
 }

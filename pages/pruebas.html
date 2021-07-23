@@ -26,6 +26,45 @@
             color: slateblue;
             font-size: 24px;
         }
+
+        .carousel {
+            width: 100%;
+            overflow: scroll;
+            padding: 30px;
+            position: relative;
+        }
+
+        .carousel__container {
+            white-space: nowrap;
+            margin: 70px 0px;
+            padding-bottom: 10px;
+        }
+
+        .carousel__item {
+            background-color: peru;
+            border-radius: 20px;
+            cursor: pointer;
+            display: inline-block;
+            height: 250px;
+            margin-right: 10px;
+            overflow: hidden;
+            transform-origin: center left;
+            transition: 450ms;
+            width: 200px;
+        }
+
+        .carousel__item:hover ~ .carousel__item {
+            transform: translate3d(100px, 0, 0);
+        }
+
+        .carousel__container:hover .carousel__item {
+            opacity: 0.3;
+        }
+
+        .carousel__container:hover .carousel__item:hover {
+            transform: scale(1.5);
+            opacity: 1;
+        }
     </style>
     <body>
         <header>
@@ -38,10 +77,22 @@
             </nav>
         </header>
         <main>
-            <p>Sección principal.</p>
-            <p>Probando pseudo-clases.</p>
-            <p>Probando pseudo-elementos.</p>
-            <p>Ejecución final.</p>
+            <section>
+                <p>Sección principal.</p>
+                <p>Probando pseudo-clases.</p>
+                <p>Probando pseudo-elementos.</p>
+                <p>Ejecución final.</p>
+            </section>
+            <section class="carousel">
+                <div class="carousel__container">
+                    <div class="carousel__item">
+
+                    </div>
+                    <div class="carousel__item">
+
+                    </div>
+                </div>
+            </section>
         </main>
         <footer>
             <nav>
