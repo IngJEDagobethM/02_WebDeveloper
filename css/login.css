@@ -1,0 +1,104 @@
+.login {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    min-height: calc(100vh - 200px);
+    justify-content: center;
+    padding: 30px 0px;
+}
+
+.login__container {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 2px solid white;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    min-height: 600px;
+    padding: 60px 70px 40px;
+    width: 300px;
+}
+
+.login__container h2 {
+    text-align: center;
+}
+
+.login__container__form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login__container__form label {
+    font-size: 14px;
+}
+
+.login__container__remember-me {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.login__container__remember-me a {
+    color: #597661;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.login__container__remember-me a:hover {
+    text-decoration: underline;
+}
+
+.login__container__social-media > div {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.login__container__social-media > div > img {
+    width: 24px;
+    padding-right: 10px;
+}
+
+.login__container__register {
+    font-size: 14px;
+    text-align: center;
+}
+
+.login__container__register a {
+    color: #597661;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.login__container__register a:hover {
+    text-decoration: underline;
+}
+
+.form__input {
+    background-color: transparent;
+    border-top: 0px;
+    border-right: 0px;
+    border-left: 0px;
+    border-bottom: 2px solid white;
+    color: #597661;
+    font-size: 16px;
+    height: 50px;
+    margin-bottom: 20px;
+    outline-style: none;
+    padding: 0px 20px;
+}
+
+.form__button {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: none;
+    border-radius: 25px;
+    color: #597661;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    height: 50px;
+    letter-spacing: 1px;
+    margin: 10px 0px;
+}
